@@ -6,15 +6,67 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
-        <label for="idNome">Nome:</label>
-        <input type="text" id="idNome" name="nmNome" value="" placeholder="Nome">
-        <textarea name="nmDesc" id="idDesc" cols="30" rows="10"></textarea> <!-- o valor do textarea é a propriedade innerText-->
     
-        <br><br>
-        <button type="reset">Limpar</button>
-        <button type="submit">Enviar</button>
-        <button type="button">Testar</button>
+    <form action=""> 
+
+        <fieldset>
+            <legend>Deixe seu recado</legend>
+            
+                <!--Campo nome-->
+                <input type="text" id="idNome" name="nmNome" value="" placeholder="Nome Completo." required title="Digite seu completo">
+
+                <br><br>
+
+                <!--Campo e-mail-->
+                <input type="email" id="idNome" name="nmNome" value="" placeholder="Seu@email.com" required title="Seu@email.com">
+
+                <br><br>
+
+                <!--Campo empresa ou organização-->
+                <input type="text" id="idNome" name="nmNome" value="" placeholder="Empresa/Organização" title="Digite em qual emrpesa você trabalha ou organização.">
+
+                <br><br>
+
+                <!--Campo telefone-->   
+                <input type="tel" id="idNome" name="nmNome" value="" placeholder="Tel."  title="Digite seu telefone de contato.">
+
+                <br><br>
+
+                <!--Campo motivo do contato-->
+                <input type=" text" id="idNome" name="nmNome" value="" placeholder="Motivo do contato." required title="Digite o motivo do contato.">
+
+                <br><br>
+                
+                <!--Campo de texto de multiplas linhas-->
+                <textarea name="nmMensagem" id="IdMensagem" cols="30" rows="10" placeholder="Mensagem escreva nesse campo de forma clara e simples o motivo do contato"></textarea> 
+
+                <br>
+
+                <button type="submit">Enviar</button> 
+
+                <br><br>
+
+
+
+
+
+
+
+
+
+
+            <!--Campo Lista -->
+            <label for="idCarros">Escolha seu carro</label><br>
+
+            <select name="nmCarros" id="idCarros" size="3" multiple>
+                <option value="Volvo">Volvo</option>
+                <option value="Ford Ka">Ford Ka</option>
+                <option value="Fiat">Fiat</option>
+                <option value="Lamburgine">Lamburgine</option>
+            </select>        
+
+            
+        </fieldset>
     </form>
 </body>
 </html>
