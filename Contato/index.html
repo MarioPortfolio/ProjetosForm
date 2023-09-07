@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Contato</title>
     <style>
-        fieldset#caixa {
+        fieldset#borda {
             display: block;
             width: 10%;
         }
@@ -14,35 +14,32 @@
             margin-top: 10%;
         }
 
+      
     </style>
 </head>
 <body>
     
     <form action=""> 
 
-        <fieldset id="caixa">
+        <fieldset id="borda">
             <legend>Deixe seu recado</legend>
             
                 <!--Campo nome-->
                 <input type="text" id="idNome" name="nmNome" value="" placeholder="Nome Completo." required title="Digite seu completo">
 
                 <br><br><br>
-
                 <!--Campo e-mail-->
                 <input type="email" id="idNome" name="nmNome" value="" placeholder="Seu@email.com" required title="Seu@email.com">
-
+                
                 <br><br><br>
-
                 <!--Campo empresa ou organização-->
                 <input type="text" id="idNome" name="nmNome" value="" placeholder="Empresa/Organização" title="Digite em qual emrpesa você trabalha ou organização.">
-
                 <br><br><br>
 
                 <!--Campo telefone-->   
                 <input type="tel" id="idNome" name="nmNome" value="" placeholder="Tel."  title="Digite seu telefone de contato.">
 
                 <br><br><br>
-
                 <!--Campo lista motivo do contato-->
                 <select name="nmMotivo" id="idMotivo" required="required">
                     <option value="">Motivo do contato</option>
@@ -55,12 +52,10 @@
 
 
                 <br><br><br>
-                
                 <!--Campo de texto de multiplas linhas-->
                 <textarea name="nmMensagem" id="IdMensagem" cols="30" rows="10" placeholder="Escreva nesse campo de forma clara e simples o motivo do contato" required></textarea> 
 
                 <br>
-                
                 <button id="btEnviar" type="submit">Enviar</button> 
 
                 <br><br>
