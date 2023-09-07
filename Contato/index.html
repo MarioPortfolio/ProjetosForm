@@ -3,68 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página de Contato</title>
+    <style>
+        fieldset#caixa {
+            display: block;
+            width: 10%;
+        }
+
+        button#btEnviar {
+            margin-top: 10%;
+        }
+
+    </style>
 </head>
 <body>
     
     <form action=""> 
 
-        <fieldset>
+        <fieldset id="caixa">
             <legend>Deixe seu recado</legend>
             
                 <!--Campo nome-->
                 <input type="text" id="idNome" name="nmNome" value="" placeholder="Nome Completo." required title="Digite seu completo">
 
-                <br><br>
+                <br><br><br>
 
                 <!--Campo e-mail-->
                 <input type="email" id="idNome" name="nmNome" value="" placeholder="Seu@email.com" required title="Seu@email.com">
 
-                <br><br>
+                <br><br><br>
 
                 <!--Campo empresa ou organização-->
                 <input type="text" id="idNome" name="nmNome" value="" placeholder="Empresa/Organização" title="Digite em qual emrpesa você trabalha ou organização.">
 
-                <br><br>
+                <br><br><br>
 
                 <!--Campo telefone-->   
                 <input type="tel" id="idNome" name="nmNome" value="" placeholder="Tel."  title="Digite seu telefone de contato.">
 
-                <br><br>
+                <br><br><br>
 
-                <!--Campo motivo do contato-->
-                <input type=" text" id="idNome" name="nmNome" value="" placeholder="Motivo do contato." required title="Digite o motivo do contato.">
+                <!--Campo lista motivo do contato-->
+                <select name="nmMotivo" id="idMotivo" required="required">
+                    <option value="">Motivo do contato</option>
+                    <option value="Elogio">Elogio</option>
+                    <option value="Problema com produto">Problema com produto</option>
+                    <option value="Reclamação">Reclamação</option>
+                    <option value="Sugestão">Sugestão</option>
+                    <option value="Outro">Outro</option>
+                </select>
 
-                <br><br>
+
+                <br><br><br>
                 
                 <!--Campo de texto de multiplas linhas-->
-                <textarea name="nmMensagem" id="IdMensagem" cols="30" rows="10" placeholder="Mensagem escreva nesse campo de forma clara e simples o motivo do contato"></textarea> 
+                <textarea name="nmMensagem" id="IdMensagem" cols="30" rows="10" placeholder="Escreva nesse campo de forma clara e simples o motivo do contato" required></textarea> 
 
                 <br>
-
-                <button type="submit">Enviar</button> 
+                
+                <button id="btEnviar" type="submit">Enviar</button> 
 
                 <br><br>
-
-
-
-
-
-
-
-
-
-
-            <!--Campo Lista -->
-            <label for="idCarros">Escolha seu carro</label><br>
-
-            <select name="nmCarros" id="idCarros" size="3" multiple>
-                <option value="Volvo">Volvo</option>
-                <option value="Ford Ka">Ford Ka</option>
-                <option value="Fiat">Fiat</option>
-                <option value="Lamburgine">Lamburgine</option>
-            </select>        
-
             
         </fieldset>
     </form>
