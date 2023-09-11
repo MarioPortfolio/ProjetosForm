@@ -5,9 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Aluno</title>
     <style>
+        fieldset#bordaCadastroAluno {
+            display: block;
+            width: 50%;
+            padding: 5%;
+        }
+
         .etiqueta {
             display: block;
         }
+
+        button#btEnviar {
+            display:inline-flex;
+            
+        }
+
+
 
     </style>
 </head>
@@ -18,49 +31,92 @@
             <legend>Casdastro Aluno</legend>
 
             <label for="idNomeCadastroNome" class="etiqueta">Nome</label>
-            <input type="text" name="nmNomeCadastroNome" id="idNomeCadastroNome" >
+            <input type="text" name="nmNomeCadastroNome" id="idNomeCadastroNome" size="30">
 
             <br><br>
 
             <label for="idNomeCadastroSobrenome" class="etiqueta">Sobrenome</label>
-            <input type="text" name="nmNomeCadastroSobrenome" id="idNomeCadastroSobrenome" >
+            <input type="text" name="nmNomeCadastroSobrenome" id="idNomeCadastroSobrenome" size="30">
         
             <br><br>
 
             <label for="idNomeCadastroNascimento" class="etiqueta">Data de Nascimento</label>
-            <input type="text" name="nmNomeCadastroNascimento" id="idNomeCadastroNascimento">
+            <input type="text" name="nmNomeCadastroNascimento" id="idNomeCadastroNascimento" size="30">
             
             <br><br>
 
             <label for="idNomeCadastroEndereco" class="etiqueta">Endereço</label>
-            <input type="text" name="nmNomeCadastroEndereco" id="idNomeCadastroEndereco">
+            <input type="text" name="nmNomeCadastroEndereco" id="idNomeCadastroEndereco" size="30">
 
             <br><br>
 
             <label for="idNomeCadastroMae" class="etiqueta">Nome da Mãe</label>
-            <input type="text" name="nmNomeCadastroMae" id="idNomeCadastroMae">
+            <input type="text" name="nmNomeCadastroMae" id="idNomeCadastroMae" size="30">
 
             <br><br>
 
             <label for="idNomeCadastroPai" class="etiqueta">Nome do Pai</label>
-            <input type="text" name="nmNomeCadastroPai" id="idNomeCadastroPai">
+            <input type="text" name="nmNomeCadastroPai" id="idNomeCadastroPai" size="30">
 
             <br><br>
 
             <label for="idNomeCadastroEmail" class="etiqueta">E-mail</label>
-            <input type="text" name="nmNomeCadastroEmail" id="idNomeCadastroEmail">
+            <input type="text" name="nmNomeCadastroEmail" id="idNomeCadastroEmail" size="30">
 
             <br><br>
 
             <label for="idNomeCadastroTel" class="etiqueta">Tel.</label>
-            <input type="text" name="nmNomeCadastroTel" id="idNomeCadastroTel">
+            <input type="text" name="nmNomeCadastroTel" id="idNomeCadastroTel" size="30">
 
             <br><br>
 
             <label for="idNomeCadastroSerie" class="etiqueta">Série</label>
-            <input type="text" name="nmNomeCadastroSerie" id="idNomeCadastroSerie">
+            <input type="text" name="nmNomeCadastroSerie" id="idNomeCadastroSerie" size="30">
 
+            <br><br>
 
+            <label for="idSexo">Sexo</label>
+            <br>
+            <input type="radio" name="nmGenero" id="idMasculino" checked>
+            <label for="idMasculino">Masculino</label>
+            <br>
+            <input type="radio" name="nmGenero" id="idMasculino" checked>
+            <label for="idMasculino">Femnino</label>
+
+            <br><br>
+            
+            <label for="idSexo">Necessidades Especiais</label>
+            
+            <br>
+
+            <input type="checkbox" name="nmDefiEspeciais" id="idAuditiva">
+            <label for="idAuditiva">Deficiência Auditiva</label>
+            <br>
+            <input type="checkbox" name="nmDefiEspeciais" id="idMotora">
+            <label for="idMotora">Deficiência Motora</label>
+            <br>
+            <input type="checkbox" name="nmDefiEspeciais" id="idVisual">
+            <label for="idVisual">Deficiência Visual</label>
+            <br>
+            <input type="checkbox" name="nmDefiEspeciais" id="idCerebral">
+            <label for="idCerebral">Paralisia Cerebral</label>
+            <br>
+            <input type="checkbox" name="nmDefiEspeciais" id="idAutismo">
+            <label for="idAutismo">Pertubação do Espectro Autista</label>
+            <br>
+            <input type="checkbox" name="nmDefiEspeciais" id="idForoPsico">
+            <label for="idForoPsico">Pertubação do Foro Psicológico</label>
+            <br>
+            <input type="checkbox" name="nmDefiEspeciais" id="idAprendizagem">
+            <label for="idAprendizagem">Pertubação de Aprendizagem</label>
+            <br>
+            <input type="checkbox" name="nmDefiEspeciais" id="idOutras">
+            <label for="idOutras">Outras Habilidades</label>
+
+            <br><br>
+
+            <button id="btEnviar" type="submit">Salvar</button> 
+            <button id="btEnviar" type="reset">Limpar Tela</button> 
 
         </fieldset>
     </form>
